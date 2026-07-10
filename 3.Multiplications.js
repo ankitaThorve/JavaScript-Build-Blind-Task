@@ -12,3 +12,12 @@ while (i <= 10) {
   console.log(`${num1} x ${i} = ${num1 * i}`);
   i++;
 }
+
+// unsing for of loop
+const num2 = 7;
+const multipliers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log("\n");
+
+for (const n of multipliers) {
+  console.log(`${num2} x ${n} = ${num2 * n}`);
+}
