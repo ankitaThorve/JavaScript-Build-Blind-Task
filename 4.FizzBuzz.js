@@ -33,3 +33,15 @@ function getFizzBuzzArray(n) {
 }
 
 console.log(getFizzBuzzArray(15));
+
+// Fully customised parameters
+function customeFizzBuzz(start, end, word1, divisor1, word2, divisor2) {
+  for (let i = start; i <= end; i++) {
+    let customeOutput = "";
+    if (i % divisor1 === 0) customeOutput += word1;
+    if (i % divisor2 === 0) customeOutput += word2;
+    console.log(customeOutput || i);
+  }
+}
+
+console.log(customeFizzBuzz(1, 10, "fuzz", 7, "zoo", 2));
