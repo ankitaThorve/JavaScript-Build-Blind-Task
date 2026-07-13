@@ -13,4 +13,4 @@ function runFizzBuzz(limit) {
   }
 }
 
-console.log(runFizzBuzz(15));
+console.log(runFizzBuzz(15)); //argument passedm with limit
