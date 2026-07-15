@@ -45,3 +45,16 @@ function customeFizzBuzz(start, end, word1, divisor1, word2, divisor2) {
 }
 
 console.log(customeFizzBuzz(1, 10, "fuzz", 7, "zoo", 2));
+
+// Arrow function syntax with default parameter
+const modernFizzBuxx = (limitA = 100) => {
+  for (let i = 1; i <= limitA; i++) {
+    let str = "";
+    if (i % 3 === 0) str += "Fizz";
+    if (i % 5 === 0) str += "Buzz";
+    console.log(str || i);
+  }
+};
+
+console.log(modernFizzBuxx());
+console.log(modernFizzBuxx(20));
